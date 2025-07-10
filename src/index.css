@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.slider-left {
+  width: fit-content;
+  display: flex;
+  animation: scroll-left 30s linear infinite;
+}
+
+.slider-right {
+  width: fit-content;
+  display: flex;
+  animation: scroll-right 30s linear infinite;
+}
