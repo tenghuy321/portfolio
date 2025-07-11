@@ -84,7 +84,6 @@ import Pro12_image4 from '../assets/images/Project12/image-4.png'
 import Des1_image1 from '../assets/images/Design1/image-1.png'
 import Des1_image2 from '../assets/images/Design1/image-2.png'
 import Des1_image3 from '../assets/images/Design1/image-3.png'
-import Des1_image4 from '../assets/images/Design1/image-4.png'
 
 import Des2_image1 from '../assets/images/Design2/image-1.png'
 import Des2_image2 from '../assets/images/Design2/image-2.png'
@@ -153,20 +152,20 @@ const Projects = () => {
       title: 'Web Design & Development',
       client: 'Exerex Express',
       date: '2025-01-03',
-      description: "The basic idea was to find a balance...",
+      description: "A clean and responsive website built for Exerex Express, focusing on intuitive UX, modern UI, and fast performance. The project covers full design and development, ensuring smooth navigation, mobile optimization, and a user-friendly experience.",
       link: 'https://everex.app/',
       tags: ['UX/UI Design', 'Web Development'],
       images: [Pro1_image1, Pro1_image2, Pro1_image3, Pro1_image4],
     },
     {
       id: 2,
-      category: 'Design',
-      title: 'Ecommerce Design',
-      images: [Des1_image1, Des1_image2, Des1_image3, Des1_image4],
-      link: 'https://www.figma.com/design/xBLssxiCATf5qpqPRy8aQD/Untitled?node-id=4-5797&t=MqBuxzoJpHWly2Hr-1',
-      client: 'Dennis Jacques',
+      category: 'Landing Page Design',
+      title: 'Pratice Design',
+      images: [Des1_image1, Des1_image2, Des1_image3],
+      link: 'https://www.figma.com/design/nK8lr46fMSWy9AYAjewws4/Hosting?node-id=2-3&t=lRrNmF39xvbqE1yw-1',
+      client: 'Pratice Design',
       date: '2025-01-03',
-      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      description: "A clean and responsive website built for Exerex Express, focusing on intuitive UX, modern UI, and fast performance. The project covers full design and development, ensuring smooth navigation, mobile optimization, and a user-friendly experience.",
       tags: ['UX/UI Design'],
     },
     {
@@ -177,7 +176,7 @@ const Projects = () => {
       link: 'https://www.xinyuanli.biz/',
       client: 'Xinyuan Li',
       date: '2025-01-03',
-      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      description: "A clean and responsive website built for Xinyuan Li, focusing on intuitive UX, modern UI, and fast performance. The project covers full design and development, ensuring smooth navigation, mobile optimization, and a user-friendly experience.",
       tags: ['UX/UI Design', 'Web Development'],
     },
     {
@@ -188,7 +187,7 @@ const Projects = () => {
       link: 'https://www.dsdlconsulting.com.kh/',
       client: 'DSDL Consulting',
       date: '2025-01-03',
-      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      description: "A clean and responsive website built for DSDL Consulting, focusing on intuitive UX, modern UI, and fast performance. The project covers full design and development, ensuring smooth navigation, mobile optimization, and a user-friendly experience.",
       tags: ['UX/UI Design', 'Web Development'],
     },
     {
@@ -199,7 +198,7 @@ const Projects = () => {
       link: 'https://www.yoceecambodia.com/',
       client: 'Yocee Cambodia',
       date: '2025-01-03',
-      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      description: "A clean and responsive website built for Yocee Cambodia, focusing on intuitive UX, modern UI, and fast performance. The project covers full design and development, ensuring smooth navigation, mobile optimization, and a user-friendly experience.",
       tags: ['UX/UI Design', 'Web Development'],
     },
     {
@@ -208,9 +207,9 @@ const Projects = () => {
       title: 'Web Design & Development',
       images: [Pro5_image1, Pro5_image2, Pro5_image3, Pro5_image4],
       link: 'https://www.antipest.com.kh/',
-      client: 'Shalom Solution',
+      client: 'Anti Pest',
       date: '2025-01-03',
-      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      description: "A clean and responsive website built for Anti Pest, focusing on intuitive UX, modern UI, and fast performance. The project covers full design and development, ensuring smooth navigation, mobile optimization, and a user-friendly experience.",
       tags: ['UX/UI Design', 'Web Development'],
     },
     {
@@ -221,7 +220,7 @@ const Projects = () => {
       link: 'https://palevioletred-gazelle-629277.hostingersite.com/',
       client: 'Shalom Solution',
       date: '2025-01-03',
-      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      description: "A clean and responsive website built for Shalom Solution, focusing on intuitive UX, modern UI, and fast performance. The project covers full design and development, ensuring smooth navigation, mobile optimization, and a user-friendly experience.",
       tags: ['UX/UI Design', 'Web Development', 'SEO', 'Social Media Marketing'],
     },
     {
@@ -232,7 +231,7 @@ const Projects = () => {
       link: 'https://wattanahomeservices.com/',
       client: 'Wattana Home Services',
       date: '2025-01-03',
-      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      description: "A clean and responsive website built for Wattana Home Services, focusing on intuitive UX, modern UI, and fast performance. The project covers full design and development, ensuring smooth navigation, mobile optimization, and a user-friendly experience.",
       tags: ['UX/UI Design', 'Web Development'],
     },
     {
@@ -243,7 +242,7 @@ const Projects = () => {
       link: 'https://a2zmep.com/',
       client: 'A2Z MEP',
       date: '2025-01-03',
-      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      description: "A clean and responsive website built for A2Z MEP, focusing on intuitive UX, modern UI, and fast performance. The project covers full design and development, ensuring smooth navigation, mobile optimization, and a user-friendly experience.",
       tags: ['UX/UI Design', 'Web Development'],
     },
 
@@ -255,7 +254,7 @@ const Projects = () => {
       link: 'https://chhunxinggroup.com/',
       client: 'Chun Xing Group',
       date: '2025-01-03',
-      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      description: "A clean and responsive website built for Chun Xing Group, focusing on intuitive UX, modern UI, and fast performance. The project covers full design and development, ensuring smooth navigation, mobile optimization, and a user-friendly experience.",
       tags: ['UX/UI Design', 'Web Development'],
     },
 
@@ -267,7 +266,7 @@ const Projects = () => {
       link: 'https://bpp-houlpamoung.com/',
       client: 'BPP Houl Pa Moung',
       date: '2025-01-03',
-      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      description: "A clean and responsive website built for BPP Houl Pa Moung, focusing on intuitive UX, modern UI, and fast performance. The project covers full design and development, ensuring smooth navigation, mobile optimization, and a user-friendly experience.",
       tags: ['UX/UI Design', 'Web Development'],
     },
     {
@@ -278,7 +277,7 @@ const Projects = () => {
       link: 'https://ege-energysolutions.com.kh/',
       client: 'EGE Energy Solutions',
       date: '2025-01-03',
-      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      description: "A clean and responsive website built for EGE Energy Solutions, focusing on intuitive UX, modern UI, and fast performance. The project covers full design and development, ensuring smooth navigation, mobile optimization, and a user-friendly experience.",
       tags: ['UX/UI Design', 'Web Development'],
     },
     {
@@ -289,7 +288,7 @@ const Projects = () => {
       link: 'https://reflexdecor-construction.com/',
       client: 'Reflex Decor Construction',
       date: '2025-01-03',
-      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      description: "A clean and responsive website built for Reflex Decor Construction, focusing on intuitive UX, modern UI, and fast performance. The project covers full design and development, ensuring smooth navigation, mobile optimization, and a user-friendly experience.",
       tags: ['UX/UI Design', 'Web Development'],
     },
     {
@@ -300,7 +299,7 @@ const Projects = () => {
       link: 'https://www.figma.com/design/7mvvD7Hnq7C3m5u2qcD837/Real-Estate-Mobile?node-id=0-1&t=8xQfM6TwGKYU8Ld5-1',
       client: 'Real Estate',
       date: '2025-01-03',
-      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      description: "A modern real estate mobile web design focused on clean layout, bold typography, and intuitive user flow. Designed to simplify property browsing with a sleek UI, strong visual hierarchy, and mobile-first UX approach.",
       tags: ['UX/UI Design'],
     },
     {
@@ -311,29 +310,29 @@ const Projects = () => {
       link: 'https://www.figma.com/design/wEcJipfuIIlg5ePHBxnwZs/RealEstateAdminDashboard?node-id=0-1&t=SxPgvJDL8fRBg6uc-1',
       client: 'UI Dashboard',
       date: '2025-01-03',
-      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      description: "A clean and functional admin dashboard UI for real estate management. Focused on data clarity, responsive layout, and intuitive navigation to enhance the user experience for property administrators and agents.",
       tags: ['UX/UI Design'],
     },
     {
       id: 16,
       category: 'Design',
-      title: 'Leading Page Design',
+      title: 'Pratice Design',
       images: [Des4_image1, Des4_image2, Des4_image3, Des4_image4],
       link: 'https://www.figma.com/design/aJZAmVnURp2wW3dgfdOyd8/01_Home?node-id=408-29&t=sQp3ELY1qU0UyZo1-1',
-      client: 'Leading Page Design',
+      client: 'Pratice Design',
       date: '2025-01-03',
-      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      description: "This landing page design explores a modern, clean aesthetic with a focus on typography contrast and visual hierarchy. The goal was to strike a balance between delicate, minimalist sans-serif fonts and strong, bold headers to create a sense of both elegance and impact. The layout emphasizes clarity and user flow, using generous white space, strategic color accents, and high-quality imagery to guide the viewer's attention. Designed as a personal practice project, it demonstrates attention to detail in UX/UI design principles, particularly around accessibility, readability, and visual storytelling..",
       tags: ['UX/UI Design'],
     },
     {
       id: 17,
       category: 'Landing Page Design',
-      title: 'Leading Page Design',
+      title: 'Landing Page Design',
       images: [Land1_image1, Land1_image2, Land1_image3, Land1_image4],
       link: 'https://www.figma.com/design/BJ9DG5Hdvm8UtYWnIG73un/Elern?node-id=3-58&t=btXvH7PD8RytgqET-1',
-      client: 'Leading Page Design',
+      client: 'Landing Page Design',
       date: '2025-01-03',
-      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      description: "This landing page design explores a modern, clean aesthetic with a focus on typography contrast and visual hierarchy. The goal was to strike a balance between delicate, minimalist sans-serif fonts and strong, bold headers to create a sense of both elegance and impact. The layout emphasizes clarity and user flow, using generous white space, strategic color accents, and high-quality imagery to guide the viewer's attention. Designed as a personal practice project, it demonstrates attention to detail in UX/UI design principles, particularly around accessibility, readability, and visual storytelling.",
       tags: ['UX/UI Design'],
     },
     {
@@ -344,7 +343,7 @@ const Projects = () => {
       link: 'https://www.figma.com/design/gileypsi4BDvnjDEArEY5V/Planti?node-id=0-1&t=pOcL6qGY0KgFv7Jd-1',
       client: 'Plant Shop Design',
       date: '2025-01-03',
-      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      description: "A fresh and minimal plant shop UI design combining elegant typography, earthy color tones, and smooth layout to create a calming, user-friendly shopping experience. Built with a focus on aesthetics and usability.",
       tags: ['UX/UI Design'],
     },
     {
@@ -355,7 +354,7 @@ const Projects = () => {
       link: 'https://www.figma.com/design/gileypsi4BDvnjDEArEY5V/Planti?node-id=0-1&t=pOcL6qGY0KgFv7Jd-1',
       client: 'Some Practice Design',
       date: '2025-01-03',
-      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      description: "This landing page design explores a modern, clean aesthetic with a focus on typography contrast and visual hierarchy. The goal was to strike a balance between delicate, minimalist sans-serif fonts and strong, bold headers to create a sense of both elegance and impact. The layout emphasizes clarity and user flow, using generous white space, strategic color accents, and high-quality imagery to guide the viewer's attention. Designed as a personal practice project, it demonstrates attention to detail in UX/UI design principles, particularly around accessibility, readability, and visual storytelling.",
       tags: ['UX/UI Design'],
     },
     {
@@ -366,7 +365,7 @@ const Projects = () => {
       link: 'https://www.figma.com/design/gileypsi4BDvnjDEArEY5V/Planti?node-id=0-1&t=pOcL6qGY0KgFv7Jd-1',
       client: 'Some Practice Design',
       date: '2025-01-03',
-      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      description: "This landing page design explores a modern, clean aesthetic with a focus on typography contrast and visual hierarchy. The goal was to strike a balance between delicate, minimalist sans-serif fonts and strong, bold headers to create a sense of both elegance and impact. The layout emphasizes clarity and user flow, using generous white space, strategic color accents, and high-quality imagery to guide the viewer's attention. Designed as a personal practice project, it demonstrates attention to detail in UX/UI design principles, particularly around accessibility, readability, and visual storytelling.",
       tags: ['UX/UI Design'],
     },
     {
@@ -377,7 +376,7 @@ const Projects = () => {
       link: 'https://www.figma.com/design/ybuQNC1mtZL9oCBeVgAgtq/car-sale?node-id=0-1&t=lLMeaY2t951XWyeH-1',
       client: 'UX/UI Design',
       date: '2025-01-03',
-      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      description: "This UX/UI design project focuses on creating an intuitive and visually engaging interface for a car sale platform. The objective was to craft a modern, user-friendly experience that simplifies vehicle browsing and comparison while maintaining a sleek, professional look. The design combines clean layouts, bold typography, and a well-structured hierarchy to enhance usability and readability. Emphasis was placed on smooth navigation, filter clarity, and responsive interaction elements—ensuring a seamless journey for users across devices. This project demonstrates a strong understanding of UX thinking paired with contemporary UI aesthetics.",
       tags: ['UX/UI Design'],
     },
   ]
