@@ -101,9 +101,9 @@ const Navbar = () => {
             ))}
 
             <ul className='flex items-center justify-center gap-10 text-[16px] sm:text-[20px] font-[600] text-[#a8abae] pt-10'>
-              <li><a href="#" className='hover:underline hover:text-[#ffc107]'>Facebook</a></li>
-              <li><a href="#" className='hover:underline hover:text-[#ffc107]'>Gmail</a></li>
-              <li><a href="#" className='hover:underline hover:text-[#ffc107]'>Telegram</a></li>
+              <li><a href="https://www.facebook.com/ly.tenghuy.58" className='hover:underline hover:text-[#ffc107]'>Facebook</a></li>
+              <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=tenghuyly2330@gmail.com" className='hover:underline hover:text-[#ffc107]'>Gmail</a></li>
+              <li><a href="https://t.me/Teng_huy" className='hover:underline hover:text-[#ffc107]'>Telegram</a></li>
               <li><a href="#" className='hover:underline hover:text-[#ffc107]'>Github</a></li>
             </ul>
           </motion.div>

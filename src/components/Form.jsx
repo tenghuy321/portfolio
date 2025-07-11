@@ -10,8 +10,8 @@ const Form = () => {
         message: '',
     })
 
-    const BOT_TOKEN = 'YOUR_BOT_TOKEN_HERE'
-    const CHAT_ID = 'YOUR_CHAT_ID_HERE'
+    const BOT_TOKEN = '8013371135:AAFmFt-LB_JGvsAeahxVu_ChBk5levDkVDw'
+    const CHAT_ID = '768856332'
 
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value })
@@ -19,12 +19,7 @@ const Form = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        const message = `
-            📩 *New Contact Message*
-            👤 Name: ${form.name}
-            📧 Email: ${form.email}
-            📝 Message: ${form.message}
-                `
+        const message = `📩 *New Contact Message*\n👤 Name: ${form.name}\n📧 Email: ${form.email}\n📝 Message: ${form.message}`
 
         const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`
 
@@ -40,7 +35,7 @@ const Form = () => {
             })
 
             if (res.ok) {
-                toast.success('✅ Message sent to Telegram!')
+                toast.success('✅ Message sent Sucessfully. Thank You!')
                 setForm({ name: '', email: '', message: '' })
             } else {
                 toast.error('❌ Telegram API Error')

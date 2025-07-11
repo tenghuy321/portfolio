@@ -1,5 +1,36 @@
 @import "tailwindcss";
 
+/* Ensure pagination is below the images */
+.custom-swiper .swiper-pagination {
+  position: relative !important;
+  margin-top: 10px;
+  bottom: auto !important;
+  text-align: center;
+}
+
+.custom-swiper .swiper-pagination-bullet {
+  background: #888;
+  opacity: 1;
+  margin: 0 6px;
+  width: 20px;
+  height: 3px;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.custom-swiper .swiper-pagination-bullet-active {
+  background: #ffc107;
+}
+
+/* You can use Tailwind scroll styles too */
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
+.no-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
 @keyframes scroll-left {
   0% {
     transform: translateX(0%);

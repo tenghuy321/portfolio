@@ -5,6 +5,8 @@ function Skill() {
         { label: 'HTML', value: 90 },
         { label: 'CSS (Tailwind, Bootstrap)', value: 90 },
         { label: 'React Js', value: 90 },
+        { label: 'Angular Js', value: 80 },
+        { label: 'Vue Js', value: 80 },
         { label: 'Javascript', value: 70 },
         { label: 'Java', value: 70 },
         { label: 'Node Js', value: 70 },

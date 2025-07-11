@@ -1,4 +1,11 @@
 import { useState } from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination, Autoplay } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/pagination'
+
+
+import { motion, AnimatePresence } from 'framer-motion'
 
 import html from '../assets/images/logos/html.png'
 import css from '../assets/images/logos/css.png'
@@ -13,11 +20,114 @@ import laravel from '../assets/images/logos/laravel.png'
 import mysql from '../assets/images/logos/mysql.png'
 import mongodb from '../assets/images/logos/mongodb.png'
 
-import image1 from '../assets/images/Project1/image-1.png'
-import image2 from '../assets/images/Project1/image-2.png'
-import image3 from '../assets/images/Project1/image-3.png'
+import Pro1_image1 from '../assets/images/Project1/image-1.png'
+import Pro1_image2 from '../assets/images/Project1/image-2.png'
+import Pro1_image3 from '../assets/images/Project1/image-3.png'
+import Pro1_image4 from '../assets/images/Project1/image-4.png'
+
+import Pro2_image1 from '../assets/images/Project2/image-1.png'
+import Pro2_image2 from '../assets/images/Project2/image-2.png'
+import Pro2_image3 from '../assets/images/Project2/image-3.png'
+import Pro2_image4 from '../assets/images/Project2/image-4.png'
+
+import Pro3_image1 from '../assets/images/Project3/image-1.png'
+import Pro3_image2 from '../assets/images/Project3/image-2.png'
+import Pro3_image3 from '../assets/images/Project3/image-3.png'
+import Pro3_image4 from '../assets/images/Project3/image-4.png'
+
+import Pro4_image1 from '../assets/images/Project4/image-1.png'
+import Pro4_image2 from '../assets/images/Project4/image-2.png'
+import Pro4_image3 from '../assets/images/Project4/image-3.png'
+import Pro4_image4 from '../assets/images/Project4/image-4.png'
+
+import Pro5_image1 from '../assets/images/Project5/image-1.png'
+import Pro5_image2 from '../assets/images/Project5/image-2.png'
+import Pro5_image3 from '../assets/images/Project5/image-3.png'
+import Pro5_image4 from '../assets/images/Project5/image-4.png'
+
+import Pro6_image1 from '../assets/images/Project6/image-1.png'
+import Pro6_image2 from '../assets/images/Project6/image-2.png'
+import Pro6_image3 from '../assets/images/Project6/image-3.png'
+import Pro6_image4 from '../assets/images/Project6/image-4.png'
+
+import Pro7_image1 from '../assets/images/Project7/image-1.png'
+import Pro7_image2 from '../assets/images/Project7/image-2.png'
+import Pro7_image3 from '../assets/images/Project7/image-3.png'
+import Pro7_image4 from '../assets/images/Project7/image-4.png'
+
+import Pro8_image1 from '../assets/images/Project8/image-1.png'
+import Pro8_image2 from '../assets/images/Project8/image-2.png'
+import Pro8_image3 from '../assets/images/Project8/image-3.png'
+import Pro8_image4 from '../assets/images/Project8/image-4.png'
+
+import Pro9_image1 from '../assets/images/Project9/image-1.png'
+import Pro9_image2 from '../assets/images/Project9/image-2.png'
+import Pro9_image3 from '../assets/images/Project9/image-3.png'
+import Pro9_image4 from '../assets/images/Project9/image-4.png'
+
+import Pro10_image1 from '../assets/images/Project10/image-1.png'
+import Pro10_image2 from '../assets/images/Project10/image-2.png'
+import Pro10_image3 from '../assets/images/Project10/image-3.png'
+import Pro10_image4 from '../assets/images/Project10/image-4.png'
+
+import Pro11_image1 from '../assets/images/Project11/image-1.png'
+import Pro11_image2 from '../assets/images/Project11/image-2.png'
+import Pro11_image3 from '../assets/images/Project11/image-3.png'
+import Pro11_image4 from '../assets/images/Project11/image-4.png'
+
+import Pro12_image1 from '../assets/images/Project12/image-1.png'
+import Pro12_image2 from '../assets/images/Project12/image-2.png'
+import Pro12_image3 from '../assets/images/Project12/image-3.png'
+import Pro12_image4 from '../assets/images/Project12/image-4.png'
+
+
+import Des1_image1 from '../assets/images/Design1/image-1.png'
+import Des1_image2 from '../assets/images/Design1/image-2.png'
+import Des1_image3 from '../assets/images/Design1/image-3.png'
+import Des1_image4 from '../assets/images/Design1/image-4.png'
+
+import Des2_image1 from '../assets/images/Design2/image-1.png'
+import Des2_image2 from '../assets/images/Design2/image-2.png'
+import Des2_image3 from '../assets/images/Design2/image-3.png'
+import Des2_image4 from '../assets/images/Design2/image-4.png'
+
+import Des3_image1 from '../assets/images/Design3/image-1.png'
+import Des3_image2 from '../assets/images/Design3/image-2.png'
+import Des3_image3 from '../assets/images/Design3/image-3.png'
+import Des3_image4 from '../assets/images/Design3/image-4.png'
+
+import Des4_image1 from '../assets/images/Design4/image-1.png'
+import Des4_image2 from '../assets/images/Design4/image-2.png'
+import Des4_image3 from '../assets/images/Design4/image-3.png'
+import Des4_image4 from '../assets/images/Design4/image-4.png'
+
+import Des5_image1 from '../assets/images/Design5/image-1.png'
+import Des5_image2 from '../assets/images/Design5/image-2.png'
+import Des5_image3 from '../assets/images/Design5/image-3.png'
+import Des5_image4 from '../assets/images/Design5/image-4.png'
+
+import Des6_image1 from '../assets/images/Design6/image-1.png'
+import Des6_image2 from '../assets/images/Design6/image-2.png'
+import Des6_image3 from '../assets/images/Design6/image-3.png'
+
+import Land1_image1 from '../assets/images/LandingPage1/image-1.png'
+import Land1_image2 from '../assets/images/LandingPage1/image-2.png'
+import Land1_image3 from '../assets/images/LandingPage1/image-3.png'
+import Land1_image4 from '../assets/images/LandingPage1/image-4.png'
+
+import Land2_image1 from '../assets/images/LandingPage2/image-1.png'
+import Land2_image2 from '../assets/images/LandingPage2/image-2.png'
+import Land2_image3 from '../assets/images/LandingPage2/image-3.png'
+
+import Land3_image1 from '../assets/images/LandingPage3/image-1.png'
+import Land3_image2 from '../assets/images/LandingPage3/image-2.png'
+import Land3_image3 from '../assets/images/LandingPage3/image-3.png'
+
 
 const Projects = () => {
+
+
+  const [selectedProject, setSelectedProject] = useState(null)
 
   const logos = [
     html,
@@ -36,45 +146,252 @@ const Projects = () => {
 
   const repeatedLogos = [...logos, ...logos]
 
-
-
   const projects = [
     {
       id: 1,
       category: 'Development',
-      title: 'Shalom Solutions',
-      image: image1,
-      link: 'https://example.com/project1',
+      title: 'Web Design & Development',
+      client: 'Exerex Express',
+      date: '2025-01-03',
+      description: "The basic idea was to find a balance...",
+      link: 'https://everex.app/',
+      tags: ['UX/UI Design', 'Web Development'],
+      images: [Pro1_image1, Pro1_image2, Pro1_image3, Pro1_image4],
     },
     {
       id: 2,
       category: 'Design',
-      title: 'UI Dashboard',
-      image: 'image1',
-      link: 'https://example.com/project2',
+      title: 'Ecommerce Design',
+      images: [Des1_image1, Des1_image2, Des1_image3, Des1_image4],
+      link: 'https://www.figma.com/design/xBLssxiCATf5qpqPRy8aQD/Untitled?node-id=4-5797&t=MqBuxzoJpHWly2Hr-1',
+      client: 'Dennis Jacques',
+      date: '2025-01-03',
+      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      tags: ['UX/UI Design'],
     },
     {
       id: 3,
       category: 'Development',
-      title: 'E-Commerce Backend',
-      image: image2,
-      link: 'https://example.com/project5',
+      title: 'Development',
+      images: [Pro2_image1, Pro2_image2, Pro2_image3, Pro2_image4],
+      link: 'https://www.xinyuanli.biz/',
+      client: 'Xinyuan Li',
+      date: '2025-01-03',
+      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      tags: ['UX/UI Design', 'Web Development'],
     },
     {
       id: 4,
       category: 'Development',
-      title: 'E-Commerce Backend',
-      image: image3,
-      link: 'https://example.com/project5',
+      title: 'Web Design & Development',
+      images: [Pro3_image1, Pro3_image2, Pro3_image3, Pro3_image4],
+      link: 'https://www.dsdlconsulting.com.kh/',
+      client: 'DSDL Consulting',
+      date: '2025-01-03',
+      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      tags: ['UX/UI Design', 'Web Development'],
     },
     {
       id: 5,
       category: 'Development',
-      title: 'E-Commerce Backend',
-      image: image2,
-      link: 'https://example.com/project5',
+      title: 'Development',
+      images: [Pro4_image1, Pro4_image2, Pro4_image3, Pro4_image4],
+      link: 'https://www.yoceecambodia.com/',
+      client: 'Yocee Cambodia',
+      date: '2025-01-03',
+      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      tags: ['UX/UI Design', 'Web Development'],
+    },
+    {
+      id: 6,
+      category: 'Development',
+      title: 'Web Design & Development',
+      images: [Pro5_image1, Pro5_image2, Pro5_image3, Pro5_image4],
+      link: 'https://www.antipest.com.kh/',
+      client: 'Shalom Solution',
+      date: '2025-01-03',
+      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      tags: ['UX/UI Design', 'Web Development'],
+    },
+    {
+      id: 7,
+      category: 'Development',
+      title: 'Web Design & Development',
+      images: [Pro6_image1, Pro6_image2, Pro6_image3, Pro6_image4],
+      link: 'https://palevioletred-gazelle-629277.hostingersite.com/',
+      client: 'Shalom Solution',
+      date: '2025-01-03',
+      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      tags: ['UX/UI Design', 'Web Development', 'SEO', 'Social Media Marketing'],
+    },
+    {
+      id: 8,
+      category: 'Development',
+      title: 'Web Design & Development',
+      images: [Pro7_image1, Pro7_image2, Pro7_image3, Pro7_image4],
+      link: 'https://wattanahomeservices.com/',
+      client: 'Wattana Home Services',
+      date: '2025-01-03',
+      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      tags: ['UX/UI Design', 'Web Development'],
+    },
+    {
+      id: 9,
+      category: 'Development',
+      title: 'Development',
+      images: [Pro8_image1, Pro8_image2, Pro8_image3, Pro8_image4],
+      link: 'https://a2zmep.com/',
+      client: 'A2Z MEP',
+      date: '2025-01-03',
+      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      tags: ['UX/UI Design', 'Web Development'],
+    },
+
+    {
+      id: 10,
+      category: 'Development',
+      title: 'Development',
+      images: [Pro9_image1, Pro9_image2, Pro9_image3, Pro9_image4],
+      link: 'https://chhunxinggroup.com/',
+      client: 'Chun Xing Group',
+      date: '2025-01-03',
+      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      tags: ['UX/UI Design', 'Web Development'],
+    },
+
+    {
+      id: 11,
+      category: 'Development',
+      title: 'Development',
+      images: [Pro10_image1, Pro10_image2, Pro10_image3, Pro10_image4],
+      link: 'https://bpp-houlpamoung.com/',
+      client: 'BPP Houl Pa Moung',
+      date: '2025-01-03',
+      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      tags: ['UX/UI Design', 'Web Development'],
+    },
+    {
+      id: 12,
+      category: 'Development',
+      title: 'Development',
+      images: [Pro11_image1, Pro11_image2, Pro11_image3, Pro11_image4],
+      link: 'https://ege-energysolutions.com.kh/',
+      client: 'EGE Energy Solutions',
+      date: '2025-01-03',
+      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      tags: ['UX/UI Design', 'Web Development'],
+    },
+    {
+      id: 13,
+      category: 'Development',
+      title: 'Development',
+      images: [Pro12_image1, Pro12_image2, Pro12_image3, Pro12_image4],
+      link: 'https://reflexdecor-construction.com/',
+      client: 'Reflex Decor Construction',
+      date: '2025-01-03',
+      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      tags: ['UX/UI Design', 'Web Development'],
+    },
+    {
+      id: 14,
+      category: 'Design',
+      title: 'Web Design',
+      images: [Des2_image1, Des2_image2, Des2_image3, Des2_image4],
+      link: 'https://www.figma.com/design/7mvvD7Hnq7C3m5u2qcD837/Real-Estate-Mobile?node-id=0-1&t=8xQfM6TwGKYU8Ld5-1',
+      client: 'Real Estate',
+      date: '2025-01-03',
+      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      tags: ['UX/UI Design'],
+    },
+    {
+      id: 15,
+      category: 'Design',
+      title: 'UI Dashboard',
+      images: [Des3_image1, Des3_image2, Des3_image3, Des3_image4],
+      link: 'https://www.figma.com/design/wEcJipfuIIlg5ePHBxnwZs/RealEstateAdminDashboard?node-id=0-1&t=SxPgvJDL8fRBg6uc-1',
+      client: 'UI Dashboard',
+      date: '2025-01-03',
+      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      tags: ['UX/UI Design'],
+    },
+    {
+      id: 16,
+      category: 'Design',
+      title: 'Leading Page Design',
+      images: [Des4_image1, Des4_image2, Des4_image3, Des4_image4],
+      link: 'https://www.figma.com/design/aJZAmVnURp2wW3dgfdOyd8/01_Home?node-id=408-29&t=sQp3ELY1qU0UyZo1-1',
+      client: 'Leading Page Design',
+      date: '2025-01-03',
+      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      tags: ['UX/UI Design'],
+    },
+    {
+      id: 17,
+      category: 'Landing Page Design',
+      title: 'Leading Page Design',
+      images: [Land1_image1, Land1_image2, Land1_image3, Land1_image4],
+      link: 'https://www.figma.com/design/BJ9DG5Hdvm8UtYWnIG73un/Elern?node-id=3-58&t=btXvH7PD8RytgqET-1',
+      client: 'Leading Page Design',
+      date: '2025-01-03',
+      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      tags: ['UX/UI Design'],
+    },
+    {
+      id: 18,
+      category: 'Design',
+      title: 'Plant Shop Design',
+      images: [Des5_image1, Des5_image2, Des5_image3, Des5_image4],
+      link: 'https://www.figma.com/design/gileypsi4BDvnjDEArEY5V/Planti?node-id=0-1&t=pOcL6qGY0KgFv7Jd-1',
+      client: 'Plant Shop Design',
+      date: '2025-01-03',
+      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      tags: ['UX/UI Design'],
+    },
+    {
+      id: 19,
+      category: 'Landing Page Design',
+      title: 'Some Practice Design',
+      images: [Land2_image1, Land2_image2, Land2_image3],
+      link: 'https://www.figma.com/design/gileypsi4BDvnjDEArEY5V/Planti?node-id=0-1&t=pOcL6qGY0KgFv7Jd-1',
+      client: 'Some Practice Design',
+      date: '2025-01-03',
+      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      tags: ['UX/UI Design'],
+    },
+    {
+      id: 20,
+      category: 'Landing Page Design',
+      title: 'Some Practice Design',
+      images: [Land3_image1, Land3_image2, Land3_image3],
+      link: 'https://www.figma.com/design/gileypsi4BDvnjDEArEY5V/Planti?node-id=0-1&t=pOcL6qGY0KgFv7Jd-1',
+      client: 'Some Practice Design',
+      date: '2025-01-03',
+      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      tags: ['UX/UI Design'],
+    },
+    {
+      id: 21,
+      category: 'Design',
+      title: 'UX/UI Design',
+      images: [Des6_image1, Des6_image2, Des6_image3],
+      link: 'https://www.figma.com/design/ybuQNC1mtZL9oCBeVgAgtq/car-sale?node-id=0-1&t=lLMeaY2t951XWyeH-1',
+      client: 'UX/UI Design',
+      date: '2025-01-03',
+      description: "The basic idea was to find a balance between thin, wispy sans-serif and bold masculine fonts...",
+      tags: ['UX/UI Design'],
     },
   ]
+
+
+
+  const openModal = (project) => {
+    setSelectedProject(project)
+  }
+
+  const closeModal = () => {
+    setSelectedProject(null)
+  }
+
 
   const [activeCategory, setActiveCategory] = useState('All')
 
@@ -83,7 +400,7 @@ const Projects = () => {
       ? projects
       : projects.filter((p) => p.category === activeCategory)
 
-  const categories = ['All', 'Design', 'Development']
+  const categories = ['All', 'Design', 'Development', 'Landing Page Design']
 
   return (
     <section id='projects' className="min-h-screen bg-[#0b0b0c] text-white">
@@ -109,33 +426,125 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-8">
-          {filteredProjects.map((project) => (
-            <div
-              key={project.id}
-              className="relative group overflow-hidden rounded-lg shadow-lg"
+        <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-8">
+          <AnimatePresence mode="wait">
+            {filteredProjects.map((project) => (
+              <motion.div
+                key={project.id}
+                layout
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -50 }}
+                transition={{ duration: 0.2, ease: 'easeInOut' }}
+                className="relative group overflow-hidden rounded-lg shadow-lg"
+              >
+                <img
+                  src={project.images[0]}
+                  alt={project.title}
+                  className="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-[#ffc107]/80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <h3 className="text-lg font-bold mb-1">{project.title}</h3>
+                  <p className="text-[14px] md:text-[16px] font-[600] mb-3 text-[#39393d]">{project.category}</p>
+                  <div className='flex items-center gap-4'>
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 bg-[#fff] text-black rounded-md hover:bg-[#ffc107] transition"
+                    >
+                      View Project
+                    </a>
+                    <button
+                      onClick={() => openModal(project)}
+                      className="px-4 py-2 bg-black text-white rounded-md hover:bg-[#ffc107] hover:text-black transition"
+                    >
+                      More Detail
+                    </button>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </motion.div>
+      </div>
+
+      {selectedProject && (
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center px-4">
+          <div className="relative max-w-5xl w-full bg-[#0b0b0c] text-white rounded-xl shadow-lg overflow-y-auto max-h-[90vh] p-6 md:p-10 gap-6 no-scroll">
+
+            {/* Close Button */}
+            <button
+              className="absolute top-4 right-4 text-white hover:text-[#ffc107] text-2xl"
+              onClick={closeModal}
             >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-[#ffc107] bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <h3 className="text-lg font-bold mb-1">{project.title}</h3>
-                <p className="text-sm mb-3 text-[#39393d]">{project.category}</p>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 bg-[#fff] text-black rounded-md hover:bg-yellow-600 transition"
-                >
-                  View Project
-                </a>
+              &times;
+            </button>
+
+            {/* Left: Text Content */}
+            <div>
+              <div className='flex flex-col items-center justify-center text-center'>
+                <p className='text-[14px] md:text-[16px] font-[600] text-[#ffc107]'>{selectedProject.title}</p>
+                <h1 className='text-[24px] sm:text-[30px] xl:text-[35px] font-[700] uppercase'>Project Title</h1>
+                <hr className='w-[1px] h-[3rem] bg-[#39393d] border-none my-5' />
+              </div>
+
+              <p className="text-sm leading-relaxed text-gray-300 mb-6">
+                {selectedProject.description}
+              </p>
+
+
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 text-[20px] text-[#fff] font-[600]">
+                <p><span className="text-[#39393d] text-[16px]">Client:</span> <br /> {selectedProject.client}</p>
+                <p><span className="text-[#39393d] text-[16px]">Industry:</span> <br /> Art & Design</p>
+                <p><span className="text-[#39393d] text-[16px]">Date:</span> <br /> {selectedProject.date}</p>
+                <p>
+                  <span className="text-[#39393d] text-[16px]">URL:</span> <br />
+                  <a href={selectedProject.link} target="_blank" className="text-[#ffc107] underline hover:text-[#e7c970]">Live Preview</a>
+                </p>
+              </div>
+
+              <div className="flex flex-wrap gap-2 mt-4 items-center justify-center py-10">
+                {selectedProject.tags?.map((tag, i) => (
+                  <span key={i} className="border border-gray-400 text-[16px] md:text-[20px] px-6 py-2 rounded-full">{tag}</span>
+                ))}
               </div>
             </div>
-          ))}
+
+            <div className="w-full pb-10 relative">
+              <Swiper
+                modules={[Pagination, Autoplay]}
+                autoplay={true}
+                loop={true}
+                pagination={{ clickable: true }}
+                spaceBetween={20}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 1,
+                  },
+                  640: {
+                    slidesPerView: 2,
+                  },
+                }}
+                className="w-full custom-swiper"
+              >
+                {selectedProject.images.map((img, index) => (
+                  <SwiperSlide key={index}>
+                    <img
+                      src={img}
+                      alt={`Slide ${index}`}
+                      className="rounded-lg h-[300px] w-full object-cover" loading='lazy'
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+
+
+          </div>
         </div>
-      </div>
+      )}
+
 
       <div className="w-full overflow-hidden space-y-6 pb-10">
         <div className="slider-left flex items-center gap-8 py-4">
