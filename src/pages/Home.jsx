@@ -84,15 +84,15 @@ const Home = () => {
       <section id="contact" className="min-h-screen bg-[#0b0b0c] text-white">
         <div className='w-full max-w-7xl mx-auto px-4 py-10 md:py-20'>
           <div className='flex flex-col items-center justify-center text-center'>
-            <p className='text-[14px] md:text-[16px] font-[600] text-[#ffc107]'>Get in Touch</p>
-            <h1 className='text-[24px] sm:text-[30px] xl:text-[35px] font-[700] uppercase'>Contact</h1>
-            <hr className='w-[1px] h-[3rem] bg-[#39393d] border-none my-5' />
+            <p className='text-[14px] md:text-[16px] font-[600] text-[#ffc107]' data-aos="fade-up">Get in Touch</p>
+            <h1 className='text-[24px] sm:text-[30px] xl:text-[35px] font-[700] uppercase' data-aos="fade-up">Contact</h1>
+            <hr className='w-[1px] h-[3rem] bg-[#39393d] border-none my-5' data-aos="fade-up" />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start py-5">
             {/* Left Side */}
             <div className='px-4'>
-              <article className="relative bg-[#39393d] text-white text-left p-6 sm:p-8 rounded-xl max-w-4xl mx-auto mt-10">
+              <article className="relative bg-[#39393d] text-white text-left p-6 sm:p-8 rounded-xl max-w-4xl mx-auto mt-10" data-aos="fade-up">
                 <img
                   src={profile}
                   alt="Profile"
@@ -105,12 +105,12 @@ const Home = () => {
                   </span>
                 </p>
               </article>
-              <div className="my-6">
+              <div className="my-6" data-aos="fade-up">
                 <h3 className="font-bold text-[20px] sm:text-[24px]">Living In:</h3>
                 <p className="text-gray-300">371 Street, Phnom Penh, CAMBODIA.</p>
               </div>
 
-              <div>
+              <div data-aos="fade-up">
                 <h3 className="font-bold text-[20px] sm:text-[24px]">Call:</h3>
                 <p className="text-gray-300">(+855) 10 800 994</p>
               </div>

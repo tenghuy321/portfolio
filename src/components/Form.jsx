@@ -48,9 +48,9 @@ const Form = () => {
 
     return (
         <div>
-            <h1 className='text-[24px] sm:text-[30px] xl:text-[35px] font-[700]'>Send me a note</h1>
-            <form onSubmit={handleSubmit} className="space-y-6 mt-10">
-                <div>
+            <h1 className='text-[24px] sm:text-[30px] xl:text-[35px] font-[700]' data-aos="fade-up">Send me a note</h1>
+            <form onSubmit={handleSubmit} className="space-y-6 mt-10" >
+                <div data-aos="fade-up">
                     <label className="block text-gray-400 mb-1 text-[14px] sm:text-[16px] lg:text-[20px]">Your Name:</label>
                     <input
                         name="name"
@@ -59,7 +59,7 @@ const Form = () => {
                         className="w-full bg-transparent border-b border-gray-600 text-[14px] sm:text-[16px] lg:text-[20px] focus:outline-none focus:border-yellow-400 text-white py-2"
                     />
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <label className="block text-gray-400 mb-1 text-[14px] sm:text-[16px] lg:text-[20px]">Your Email:</label>
                     <input
                         name="email"
@@ -68,7 +68,7 @@ const Form = () => {
                         className="w-full bg-transparent border-b border-gray-600 text-[14px] sm:text-[16px] lg:text-[20px] focus:outline-none focus:border-yellow-400 text-white py-2"
                     />
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <label className="block text-gray-400 mb-1 text-[14px] sm:text-[16px] lg:text-[20px]">Describe what you need:</label>
                     <textarea
                         name="message"
@@ -78,7 +78,7 @@ const Form = () => {
                         className="w-full bg-transparent border-b border-gray-600 text-[14px] sm:text-[16px] lg:text-[20px] focus:outline-none focus:border-yellow-400 text-white py-2"
                     />
                 </div>
-                <button
+                <button data-aos="fade-up"
                     type="submit"
                     className="bg-[#ffc107] hover:bg-yellow-500 text-black px-6 py-3 rounded-md font-semibold transition text-[14px] sm:text-[16px] lg:text-[20px]"
                 >

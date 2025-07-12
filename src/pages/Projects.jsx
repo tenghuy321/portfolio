@@ -405,12 +405,12 @@ const Projects = () => {
     <section id='projects' className="min-h-screen bg-[#0b0b0c] text-white">
       <div className='w-full max-w-7xl mx-auto px-4 py-10 md:py-20'>
         <div className='flex flex-col items-center justify-center text-center'>
-          <p className='text-[14px] md:text-[16px] font-[600] text-[#ffc107]'>My Work</p>
-          <h1 className='text-[24px] sm:text-[30px] xl:text-[35px] font-[700] uppercase'>Projects</h1>
-          <hr className='w-[1px] h-[3rem] bg-[#39393d] border-none my-5' />
+          <p className='text-[14px] md:text-[16px] font-[600] text-[#ffc107]' data-aos="fade-up">My Work</p>
+          <h1 className='text-[24px] sm:text-[30px] xl:text-[35px] font-[700] uppercase' data-aos="fade-up">Projects</h1>
+          <hr className='w-[1px] h-[3rem] bg-[#39393d] border-none my-5' data-aos="fade-up" />
         </div>
 
-        <div className="flex flex-wrap justify-center gap-4 text-lg font-medium my-10">
+        <div className="flex flex-wrap justify-center gap-4 text-lg font-medium my-10" data-aos="fade-up">
           {categories.map((cat) => (
             <button
               key={cat}
@@ -425,8 +425,8 @@ const Projects = () => {
           ))}
         </div>
 
-        <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-8">
-          <AnimatePresence mode="wait">
+        <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-aos="fade-up">
+          <AnimatePresence mode="wait" > 
             {filteredProjects.map((project) => (
               <motion.div
                 key={project.id}
