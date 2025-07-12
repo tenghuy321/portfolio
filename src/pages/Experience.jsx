@@ -28,13 +28,15 @@ const Experience = () => {
         </div>
 
         <hr className="my-8 border-t-2 border-[#585b5c] w-full" data-aos="fade-up" />
-        <a data-aos="fade-up"
-          href={cvPDF}
-          download="cv.pdf"
-          className="bg-[#ffc107] hover:bg-yellow-500 text-black px-8 py-2 rounded-md font-semibold transition text-[14px] sm:text-[16px] lg:text-[20px]"
-        >
-          Download CV
-        </a>
+        <div data-aos="fade-up">
+          <a
+            href={cvPDF}
+            download="cv.pdf"
+            className="bg-[#ffc107] hover:bg-yellow-500 text-black px-8 py-2 rounded-md font-semibold transition text-[14px] sm:text-[16px] lg:text-[20px]"
+          >
+            Download CV
+          </a>
+        </div>
       </div>
     </section>
   )

@@ -93,7 +93,7 @@ function Skill() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-10 px-4">
                     <div className="flex flex-col items-center">
-                        <h1 className="text-[24px] sm:text-[30px] xl:text-[35px] font-[700]" >Tool</h1>
+                        <h1 className="text-[24px] sm:text-[30px] xl:text-[35px] font-[700]" data-aos="fade-up">Tool</h1>
                         {[
                             { label: 'Figma', value: '90%' },
                             { label: 'Adobe XD', value: '60%' },
