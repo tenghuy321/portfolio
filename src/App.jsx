@@ -8,7 +8,8 @@ import Services from "./pages/Services"
 import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
 import Aos from "aos"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
+import Loading from "./components/Loading"
 function App() {
   useEffect(() => {
     Aos.init({
@@ -16,6 +17,20 @@ function App() {
       once: false,
     })
   }, [])
+
+  const [loading, isloading] = useState(true)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      isloading(false)
+    }, 2000) 
+    return () => clearTimeout(timer)
+  }, [])
+
+  if (loading) {
+    return <Loading />
+  }
+
   return (
 
     <main>
