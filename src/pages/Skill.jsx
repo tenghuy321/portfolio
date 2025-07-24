@@ -8,11 +8,12 @@ function Skill() {
         { label: 'Angular Js', value: 80 },
         { label: 'Vue Js', value: 80 },
         { label: 'Javascript', value: 70 },
+        { label: 'Typescript', value: 70 },
         { label: 'Java', value: 70 },
         { label: 'Node Js', value: 70 },
         { label: 'PHP (Laravel)', value: 70 },
         { label: 'RESTApi', value: 70 },
-        { label: 'Version Control', value: 90 },
+        { label: 'Version Control', value: 80 },
     ];
 
     const [animatedValues, setAnimatedValues] = useState(progressItems.map(() => 0));
@@ -97,7 +98,7 @@ function Skill() {
                         {[
                             { label: 'Figma', value: '90%' },
                             { label: 'Adobe XD', value: '60%' },
-                            { label: 'Photoshop', value: '60%' },
+                            { label: 'VS Code', value: '90%' },
                         ].map((tool, idx) => (
                             <div key={idx} className="w-full mt-4"  data-aos="fade-up">
                                 <div className="flex items-center justify-between text-[16px] sm:text-[20px] font-[500]">

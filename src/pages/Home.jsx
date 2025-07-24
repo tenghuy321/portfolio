@@ -18,7 +18,7 @@ const Home = () => {
                 Web Designer & <br />
                 Front-end Developer
               </div>
-              <p className='text-gray-500 pt-2'>with 1 years of experience, I ask the necessary to create brands.</p>
+              <p className='text-gray-500 pt-2'>with 2 years of experience, I ask the necessary to create brands.</p>
             </div>
 
             {/* Center image */}

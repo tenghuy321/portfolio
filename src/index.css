@@ -60,3 +60,7 @@
   display: flex;
   animation: scroll-right 30s linear infinite;
 }
+
+.vertical-timeline::before {
+  background-color: #39393d !important; /* yellow-400 */
+}

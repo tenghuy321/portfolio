@@ -19,6 +19,8 @@ import php from '../assets/images/logos/php.png'
 import laravel from '../assets/images/logos/laravel.png'
 import mysql from '../assets/images/logos/mysql.png'
 import mongodb from '../assets/images/logos/mongodb.png'
+import adobexd from '../assets/images/logos/adobexd.png'
+import figma from '../assets/images/logos/figma.png'
 
 import Pro1_image1 from '../assets/images/Project1/image-1.png'
 import Pro1_image2 from '../assets/images/Project1/image-2.png'
@@ -141,6 +143,8 @@ const Projects = () => {
     laravel,
     mysql,
     mongodb,
+    adobexd,
+    figma
   ]
 
   const repeatedLogos = [...logos, ...logos]
